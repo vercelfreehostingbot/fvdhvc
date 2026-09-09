@@ -1,0 +1,401 @@
+/* Poppins font */
+@font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+/* AvenirNext font */
+@font-face {
+    font-family: AvenirNext;
+    src: url(assets/fonts/AvenirNextLTPro-Regular.otf);
+}
+
+/* Universal CSS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: Poppins, sans-serif;
+}
+
+main {
+    width: 1400px;
+    margin: 10px auto;
+    padding: 16px;
+    background-color: #101010;
+    display: flex;
+    border-radius: 30px;
+}
+
+/* Left Aside CSS */
+.left-aside {
+    width: 340px;
+    background-color: #101010;
+    color: #fff;
+    padding-left: 60px;
+    padding-top: 65px;
+}
+
+.left-aside .profile-pic {
+    position: relative;
+    display: inline-block;
+}
+
+.left-aside .profile-pic p {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DC3434;
+    border-radius: 50px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19.5px;
+    letter-spacing: 0.22px;
+    color: #fff;
+}
+
+.left-aside .profile-info {
+    margin-top: 20px;
+}
+
+.left-aside .profile-info h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.left-aside .profile-info p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #9F9F9F;
+}
+
+.left-aside .menu-items {
+    list-style: none;
+    margin-top: 100px;
+}
+
+.left-aside .menu-items li a {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 35px;
+    color: #878787;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.left-aside .menu-items li:nth-child(2) a {
+    color: #fff;
+}
+
+/* Main Content CSS */
+.main-content {
+    width: 1060px;
+    height: 860px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .left {
+    padding: 76px 100px;
+    width: 66.66%;
+}
+
+.main-content .left .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .left .header-left h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.67px;
+    color: #262A41;
+    margin-bottom: 10px;
+}
+
+.main-content .left .header-left p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.34px;
+    color: #878787;
+}
+
+.main-content .left .header-right {
+    position: relative;
+    margin-right: 130px;
+}
+
+.main-content .left .header-right .img-one {
+    position: absolute;
+    z-index: 30;
+    left: 0px;
+}
+
+.main-content .left .header-right .img-two {
+    position: absolute;
+    z-index: 20;
+    left: 28px;
+}
+
+.main-content .left .header-right .img-three {
+    position: absolute;
+    z-index: 10;
+    left: 56px;
+}
+
+.main-content .left .header-right .plus-icon {
+    position: absolute;
+    z-index: 10;
+    left: 100px;
+    top: 5px;
+}
+
+.main-content .left .chart-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 46px;
+}
+
+.main-content .left .bar {
+    width: 16px;
+    background-color: #D0E4FF;
+}
+
+.main-content .left .bar:nth-child(22) {
+    width: 16px;
+    background-color: #157AFF;
+}
+
+.main-content .left .info {
+    margin-top: 46px;
+}
+
+.main-content .left .info .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #DEDEDE;
+    padding-bottom: 5px;
+}
+
+.main-content .left .info .header h3 {
+    font-family: AvenirNext, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: #262A41;
+}
+
+.main-content .left .info .info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.main-content .left .info .info-item .info-left {
+    display: flex;
+}
+
+.main-content .icon-container {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-right: 16px;
+}
+
+.main-content .grocery-icon-bg {
+    background-color: #32A7E2;
+}
+
+.main-content .transportation-icon-bg {
+    background-color: #B548C6;
+}
+
+.main-content .housing-icon-bg {
+    background-color: #FF8700;
+}
+
+.main-content .food-and-drink-icon-bg {
+    background-color: #DC3434;
+}
+
+.main-content .entertainment-icon-bg {
+    background-color: #4BA83D;
+}
+
+.main-content .text h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.34px;
+    color: #273240;
+}
+
+.main-content .text p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: #9FA3A8;
+}
+
+.main-content .info-right p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.34px;
+    color: #273240;
+}
+
+.main-content .right-aside {
+    width: 33.33%;
+    background-color: #F9FAFC;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 76px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-content .right-aside h3 {
+    font-family: AvenirNext, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.33px;
+    color: #262A41;
+}
+
+.main-content .progress-container {
+    margin: 20px 0;
+}
+
+.main-content .progress-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -5px;
+}
+
+.main-content .progress-content h6 {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.46px;
+    color: #273240;
+}
+
+.main-content .progress-content p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.46px;
+    color: #273240;
+}
+
+progress {
+    width: 100%;
+    height: 5px;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 50px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #31BA96;
+    border-radius: 50px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #31BA96;
+    border-radius: 50px;
+}
+
+.main-content .right-aside .bottom {
+    background-color: #EDF0F6;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    border-radius: 10px;
+}
+
+.main-content .right-aside .bottom .image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 20px;
+    margin-top: -35px;
+}
+
+.main-content .right-aside .bottom h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.34px;
+    color: #273240;
+}
+
+.main-content .right-aside .bottom p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.43px;
+    color: #404852;
+    margin-bottom: 20px;
+}
+
+.main-content .right-aside .bottom button {
+    width: 100%;
+    border: none;
+    background-color: #101010;
+    color: #FFFFFF;
+    padding: 14px 0;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19.5px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
